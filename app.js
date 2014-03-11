@@ -4,6 +4,7 @@
  */
 
 var indexController = require('./controllers/indexController.js')
+var contentController = require('./controllers/contentController.js')
 
 var express = require('express');
 
@@ -32,7 +33,7 @@ if ('development' == app.get('env')) {
 
 app.get('/login', indexController.login);
 app.get('/index', indexController.index)
-
+app.get('/resources', contentController.resources)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
