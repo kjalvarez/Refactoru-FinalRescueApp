@@ -1,3 +1,5 @@
+var AvailableModel = require('../models/availableDogs')
+
 module.exports = {
 	resources: function(req, res) {
 		res.render('resources', {
@@ -8,9 +10,14 @@ module.exports = {
 	},
 
 	displayDogs: function(req, res) {
-		res.render('currentDogs', {
-			title: 'Western Dogs Rescue of Colorado',
-			title2: 'Adoptable dogs'
+		AvailableModel.find({}, function(err, data) {
+			console.log('Error test', err)
+			console.log(data);
+			res.render('currentDogs', {
+				dogs: data, 
+				title: 'Western Dogs Rescue of Colorado',
+				title2: 'Adoptable dogs'
+			})
 		})
 	},
 
@@ -20,5 +27,5 @@ module.exports = {
 			title2: 'Locator'
 		})
 	}
-}
+}  
 

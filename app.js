@@ -7,9 +7,11 @@ var indexController = require('./controllers/indexController.js')
 var contentController = require('./controllers/contentController.js')
 
 var express = require('express');
-
 var http = require('http');
 var path = require('path');
+var mongoose = require('mongoose')
+
+
 
 var app = express();
 
@@ -30,7 +32,6 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-
 app.get('/login', indexController.login);
 app.get('/index', indexController.index)
 app.get('/resources', contentController.resources)
@@ -48,6 +49,7 @@ app.get('/locatorDirection', function (req,res) {
 	res.redirect('/locator')
 })
 
+mongoose.connect('mongodb://localhost/dogrescue')
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -3,3 +3,11 @@ extends layout
 block content
 	h1.bigBanner #{title}
 	h1#resourcesBanner #{title2}
+
+	for dog in dogs
+		.mainContainer
+		p Name: #{dog.name}, #{dog.age} #{dog.sex} 
+		p About me: #{dog.bio}
+		p Foster: #{dog.foster}
+		p PHOTO HERE
+
