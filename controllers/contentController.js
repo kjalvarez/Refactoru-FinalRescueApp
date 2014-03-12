@@ -11,7 +11,14 @@ module.exports = {
 		res.render('currentDogs', {
 			title: 'Western Dogs Rescue of Colorado',
 			title2: 'Adoptable dogs'
-			})
-		}
+		})
+	},
+
+	locator: function(req, res) {
+		res.render('locate', {
+			title: 'Western Dogs Rescue of Colorado',
+			title2: 'Locator'
+		})
 	}
+}
 
