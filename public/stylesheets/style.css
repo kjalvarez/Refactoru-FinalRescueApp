@@ -92,3 +92,12 @@ a {
 	text-align: center;
 	padding: 10px;
 }
+
+#loginButton {
+	background-color: #A4D3EE;
+	width: 35%;
+}
+
+#loginButton :hover {
+	background-color: orange;
+}
