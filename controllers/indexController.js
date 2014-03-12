@@ -7,7 +7,8 @@ module.exports = {
 
 	index: function(req, res) {
 		res.render('index', {
-			title: 'Welcome to Western Dogs Rescue Volunteer Portal!'
+			title: 'Western Dogs Rescue of Colorado',
+			title2: 'Welcome to our volunteer portal!'
 		})
 	}
 }

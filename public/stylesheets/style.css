@@ -12,20 +12,24 @@ a {
 	color: #00B7FF;
 }
 
+
 #indexBanner {
 	background-color: white;
-	width: 70%;
+	font-size: 48px;
+	width: 65%;
 	text-align: center;
 	opacity: .6;
 	border-radius: 10px;
 	padding: 5px;
-	border: solid #926239;
+	border: solid #926239 10px;
+	margin-left: auto;
+	margin-right: auto;
 		
 }
 
 .mainContainer {
 	font-size: 24px;
-	padding: 5px;
+	padding: 10px;
 	background-color: white;
 	opacity: .6;
 	border-radius: 10px;
@@ -43,14 +47,16 @@ a {
 	background-color: white;
 	opacity: .6;
 	border-radius: 10px;
-	border: solid #926239;
-	width: 20%;
+	border: solid #926239 10px;
+	width: 30%;
 	text-align: center;
-	font-size: 44px;
+	font-size: 56px;
 	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#loginBanner {
+.bigBanner {
 	background-color: white;
 	opacity: .6;
 	border-radius: 10px;
@@ -71,13 +77,15 @@ a {
 
 #loginBox {
 	background-color: white;
+	padding: 15px;
 	opacity: .6;
 	border-radius: 10px;
-	border: solid #926239;
+	border: solid #926239 10px;
 	font-size: 36px;
 	text-align: center;
-	margin-right: 35%;
-	margin-left: 35%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
 }
 
 #imageContainer {

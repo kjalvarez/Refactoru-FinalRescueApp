@@ -1,8 +1,10 @@
 extends layout
 
 block content
-	h1#indexBanner #{title}
+	h1.bigBanner #{title}
+	h1#indexBanner #{title2}
 
+	.mainContainer
 		p Please use the links below to find more information.
 
 		a(href=" ") Locator
@@ -13,5 +15,5 @@ block content
 
 		a(href=" ") Resources
 		p Forms needed for any adoption or homecheck, and the volunteer handbook.
-	
-		p <img id='confusedDog' src=/images/confusedpup.jpeg> Don't see what you're looking for?  Please email <a>rescue@westerndogs.org</a> with additional questions. 
+
+		p <img id='confusedDog' src=/images/confusedpup.jpeg> Don't see what you need?  Please email <a>rescue@westerndogs.org</a> with additional questions. 
