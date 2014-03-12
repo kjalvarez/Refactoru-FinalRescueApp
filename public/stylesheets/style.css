@@ -61,7 +61,7 @@ a {
 	opacity: .6;
 	border-radius: 10px;
 	border: solid #926239;
-	font-size: 68px;
+	font-size: 96px;
 	padding: 20px;
 	text-align: center;
 
@@ -100,4 +100,22 @@ a {
 
 #loginButton :hover {
 	background-color: orange;
+}
+
+.navigateBar {
+	width: 20%;
+	margin-left: 75%;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 24px;
+	background-color: #97694F;
+	padding: 15px;
+	opacity: .7;
+	border-radius: 10px;
+	border: solid #FAF0E6;
+	
+}
+
+.navigateOption {
+	padding: 20px;
 }
