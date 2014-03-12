@@ -1,7 +1,7 @@
 module.exports = {
 	login: function(req, res) {
 		res.render('login', {
-			title: 'This is the login page'
+			title: 'Western Dogs Rescue of Colorado'
 		})
 	},
 

@@ -2,6 +2,7 @@ body {
 	padding: 50px;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	background-image: url(/images/pawprints.jpg);
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Buda', cursive;
@@ -47,4 +48,39 @@ a {
 	text-align: center;
 	font-size: 44px;
 	padding: 5px;
+}
+
+#loginBanner {
+	background-color: white;
+	opacity: .6;
+	border-radius: 10px;
+	border: solid #926239;
+	font-size: 68px;
+	padding: 20px;
+	text-align: center;
+
+}
+
+.frontImage {
+	border: solid #926239;
+	border-radius: 65px;
+	width: 30%;
+	height: 30%;
+	text-align: center;
+}
+
+#loginBox {
+	background-color: white;
+	opacity: .6;
+	border-radius: 10px;
+	border: solid #926239;
+	font-size: 36px;
+	text-align: center;
+	margin-right: 35%;
+	margin-left: 35%;
+}
+
+#imageContainer {
+	text-align: center;
+	padding: 10px;
 }
