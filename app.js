@@ -34,6 +34,7 @@ if ('development' == app.get('env')) {
 app.get('/login', indexController.login);
 app.get('/index', indexController.index)
 app.get('/resources', contentController.resources)
+app.get('/dogs', contentController.displayDogs)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

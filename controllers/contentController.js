@@ -4,5 +4,14 @@ module.exports = {
 			title: 'Western Dogs Rescue of Colorado',
 			title2: 'Resources'
 		})
+
+	},
+
+	displayDogs: function(req, res) {
+		res.render('currentDogs', {
+			title: 'Western Dogs Rescue of Colorado',
+			title2: 'Adoptable dogs'
+			})
+		}
 	}
-}
+
