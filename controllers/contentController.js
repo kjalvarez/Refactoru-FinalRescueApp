@@ -10,7 +10,7 @@ module.exports = {
 	},
 
 	displayDogs: function(req, res) {
-		AvailableModel.find({}, function(err, data) {
+		AvailableModel.find({}, function (err, data) {
 			console.log('Error test', err)
 			console.log(data);
 			res.render('currentDogs', {

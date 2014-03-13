@@ -119,3 +119,34 @@ a {
 .navigateOption {
 	padding: 20px;
 }
+
+.dogListContainer {
+	font-size: 24px;
+	padding: 10px;
+	background-color: white;
+	opacity: .6;
+	border-radius: 10px;
+	border: solid #926239;
+	width: 100%;
+}
+
+
+.dogInfo {
+	display: inline-block;
+	padding: 10px;
+}
+
+.dogImage {
+	padding: 2%;
+
+}
+
+.dogListHeader {
+	font-size: 36px;
+	font-weight: bolder;
+}
+
+.dogImage {
+	border-radius: 10px;
+	border: solid #926239;
+}

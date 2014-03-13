@@ -11,7 +11,7 @@ var http = require('http');
 var path = require('path');
 var mongoose = require('mongoose')
 
-
+mongoose.connect('mongodb://localhost/rescuedogs')
 
 var app = express();
 
@@ -49,7 +49,7 @@ app.get('/locatorDirection', function (req,res) {
 	res.redirect('/locator')
 })
 
-mongoose.connect('mongodb://localhost/dogrescue')
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
