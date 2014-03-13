@@ -133,11 +133,13 @@ a {
 
 .dogInfo {
 	display: inline-block;
-	padding: 10px;
+	padding: 15px;
+	width: 75%;
 }
 
 .dogImage {
 	padding: 2%;
+	width: 20%;
 
 }
 
@@ -149,4 +151,8 @@ a {
 .dogImage {
 	border-radius: 10px;
 	border: solid #926239;
+}
+
+.sectionTitle {
+	text-decoration: underline;
 }

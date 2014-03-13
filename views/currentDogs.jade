@@ -7,10 +7,10 @@ block content
 	for dog in dogs
 		.dogListContainer
 			span
-				img(class='dogImage' src='http://assets.classivox.com/vixle_images/-1615655849-original.jpg')
+				img(class='dogImage' src='#{dog.photo}')
 			span.dogInfo
-				p.dogListHeader #{dog.name}, #{dog.age} #{dog.sex} 
-				p About me: #{dog.bio}
-				p Foster: #{dog.foster}
+				p.dogListHeader #{dog.name}, #{dog.age} #{dog.sex} #{dog.breed}
+				p <em>About me:</em> #{dog.bio}
+				p <em>Foster:</em> #{dog.foster}
 		
 
