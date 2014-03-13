@@ -26,6 +26,13 @@ module.exports = {
 			title: 'Western Dogs Rescue of Colorado',
 			title2: 'Locator'
 		})
+	},
+
+	addDog: function (req, res) {
+		res.render('addDogs', {
+			title: 'Western Dogs Rescue of Colorado',
+			title2: 'Add a dog'
+		})
 	}
 }  
 

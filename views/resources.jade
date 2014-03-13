@@ -1,6 +1,11 @@
 extends layout
 
 block content
+	.navigateBar Navigate to:
+		span.navigateOption
+			a(href="/locatorDirection") Locator 
+		span
+			a(href="/dogsDirection") Dogs
 	h1.bigBanner #{title}
 	h1#resourcesBanner #{title2}
 
@@ -20,8 +25,4 @@ block content
 				a(href="/resourceDocs/FAQS.pdf" target='blank') Frequently asked questions
 				p A list of questions commonly asked about the rescue.  
 
-	.navigateBar Navigate to:
-		span.navigateOption
-			a(href="/locatorDirection") Locator 
-		span
-			a(href="/dogsDirection") Dogs
+	

@@ -37,6 +37,7 @@ app.get('/index', indexController.index)
 app.get('/resources', contentController.resources)
 app.get('/dogs', contentController.displayDogs)
 app.get('/locator', contentController.locator)
+app.get('/addDog', contentController.addDog)
 
 app.get('/resourcesDirection', function (req, res) {
 	res.redirect('/resources')
@@ -49,6 +50,9 @@ app.get('/locatorDirection', function (req,res) {
 	res.redirect('/locator')
 })
 
+app.get('/addDogDirection', function (req, res) {
+	res.redirect('/addDog')
+})
 
 
 http.createServer(app).listen(app.get('port'), function(){
