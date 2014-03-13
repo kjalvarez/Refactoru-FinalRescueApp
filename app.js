@@ -37,7 +37,7 @@ app.get('/index', indexController.index)
 app.get('/resources', contentController.resources)
 app.get('/dogs', contentController.displayDogs)
 app.get('/locator', contentController.locator)
-app.get('/addDog', contentController.addDog)
+app.get('/addDog', contentController.addDogForm)
 
 app.get('/resourcesDirection', function (req, res) {
 	res.redirect('/resources')
@@ -54,6 +54,7 @@ app.get('/addDogDirection', function (req, res) {
 	res.redirect('/addDog')
 })
 
+app.post("/addDogAction", contentController.addDog)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
