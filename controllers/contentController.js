@@ -36,23 +36,22 @@ module.exports = {
 	},
 
 	addDog: function (req, res) {
-		var name = req.body.name;
-		var age = req.body.age;
-		var breed = req.body.breed;
-		var sex = req.body.sex;
-		var foster = req.body.foster;
-		var biography = req.body.biography; 
-		var photo = req.body.photo
-
-		collection.insert({
-			"name" : name, 
-			"age" : age,
-			"breed" : breed,
-			"sex" : sex,
-			"foster" : foster,
-			"biography" : biography,
-			"photo" : photo
+		var newDog = new AvailableModel({
+			name: req.body.name,
+			age: req.body.age,
+			breed: req.body.breed,
+			sex: req.body.sex,
+			foster: req.body.foster,
+			biography: req.body.biography,
+			photo: req.body.photo
 		})
+		newDog.save(function(err, data) {
+			if(err) {
+				console.log('error')
+			} else {
+				res.send('Success!')
+			} 
+		});
 	}
-}  
+	}  
 
