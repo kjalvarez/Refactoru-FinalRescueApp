@@ -50,7 +50,10 @@ a {
 #confusedDog {
 	horizontal-align: left;
 	width: 150px;
+	border-radius: 50px;
 	height: 100px;
+	border: solid #926239
+
 }
 
 #resourcesBanner {
