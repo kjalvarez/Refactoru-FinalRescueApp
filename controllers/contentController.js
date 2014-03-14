@@ -42,14 +42,16 @@ module.exports = {
 			breed: req.body.breed,
 			sex: req.body.sex,
 			foster: req.body.foster,
-			biography: req.body.biography,
+			bio: req.body.biography,
 			photo: req.body.photo
 		})
 		newDog.save(function(err, data) {
 			if(err) {
 				console.log('error')
 			} else {
-				res.send('Success!')
+				res.render('addSuccess', {
+					title: 'Western Dogs Rescue of Colorado'
+				})
 			} 
 		});
 	}

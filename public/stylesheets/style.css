@@ -36,6 +36,17 @@ a {
 	
 }
 
+.successMainContainer {
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+	font-size: 36px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 10px;
+	border: solid #926239;
+}
+
 #confusedDog {
 	horizontal-align: left;
 	width: 150px;
@@ -115,6 +126,21 @@ a {
 	
 }
 
+.successNavigateBar {
+	width: 75%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 24px;
+	background-color: #97694F;
+	padding: 15px;
+	opacity: .7;
+	border-radius: 10px;
+	border: solid #FAF0E6;
+	
+}
+
 .navigateOption {
 	padding: 20px;
 }
@@ -127,6 +153,7 @@ a {
 	border-radius: 10px;
 	border: solid #926239;
 	width: 100%;
+	margin-bottom: 2%;
 }
 
 
@@ -137,7 +164,7 @@ a {
 }
 
 .dogImage {
-	padding: 2%;
+	vertical-align: top;
 	width: 20%;
 
 }
