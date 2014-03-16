@@ -44,15 +44,26 @@ module.exports = {
 		var biography = req.body.biography; 
 		var photo = req.body.photo
 
-		// collection.insert({
-		// 	"name" : name, 
-		// 	"age" : age,
-		// 	"breed" : breed,
-		// 	"sex" : sex,
-		// 	"foster" : foster,
-		// 	"biography" : biography,
-		// 	"photo" : photo
-		// })
+
+		var newDog = new AvailableModel({
+			name: req.body.name,
+			age: req.body.age,
+			breed: req.body.breed,
+			sex: req.body.sex,
+			foster: req.body.foster,
+			bio: req.body.biography,
+			photo: req.body.photo
+		})
+		newDog.save(function(err, data) {
+			if(err) {
+				console.log('error')
+			} else {
+				res.render('addSuccess', {
+					title: 'Western Dogs Rescue of Colorado'
+				})
+			} 
+		});
+
 	}
-}  
+	}  
 
