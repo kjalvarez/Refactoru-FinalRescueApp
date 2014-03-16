@@ -56,12 +56,8 @@ a {
 }
 
 .bigBanner {
-	background-color: white;
-	opacity: .6;
-	border-radius: 10px;
-	border: solid #926239;
 	font-size: 96px;
-	padding: 20px;
+	color: #f5f5dc;
 	text-align: center;
 
 }
@@ -102,8 +98,9 @@ a {
 }
 
 .navigateBar {
-	width: 25%;
-	margin-left: 75%;
+	width: 40%;
+	color: #f5f5dc;
+	margin-left: 60%;
 	margin-top: 10px;
 	text-align: center;
 	font-size: 24px;
@@ -137,8 +134,8 @@ a {
 }
 
 .dogImage {
-	padding: 2%;
 	width: 20%;
+	margin-bottom: 5px;
 
 }
 
@@ -150,6 +147,10 @@ a {
 .dogImage {
 	border-radius: 10px;
 	border: solid #926239;
+}
+
+img {
+	vertical-align: top;
 }
 
 .sectionTitle {
@@ -185,3 +186,4 @@ a {
 	background-color: #A4D3EE;
 	width: 25%;
 	}
+

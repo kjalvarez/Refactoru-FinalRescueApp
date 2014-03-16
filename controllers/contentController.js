@@ -44,15 +44,15 @@ module.exports = {
 		var biography = req.body.biography; 
 		var photo = req.body.photo
 
-		collection.insert({
-			"name" : name, 
-			"age" : age,
-			"breed" : breed,
-			"sex" : sex,
-			"foster" : foster,
-			"biography" : biography,
-			"photo" : photo
-		})
+		// collection.insert({
+		// 	"name" : name, 
+		// 	"age" : age,
+		// 	"breed" : breed,
+		// 	"sex" : sex,
+		// 	"foster" : foster,
+		// 	"biography" : biography,
+		// 	"photo" : photo
+		// })
 	}
 }  
 
