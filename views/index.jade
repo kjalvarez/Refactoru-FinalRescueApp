@@ -7,16 +7,18 @@ block content
 	.mainContainer
 
 		.indexSelector
-			img(class= 'indexIcon' src='/images/locatorIcon.png')
+			img(class = 'indexIcon' src='/images/locatorIcon.png')
 			p Search and view available foster homes in Colorado, short term fosters near out of state shelters, and transport schedules.
-			.indexButton(href="locatorDirection") Locate!
+			a.indexLink(href="locatorDirection") Locate!
 
 		.indexSelector
-			a(href="dogsDirection") Dogs
+			img(class ="indexIcon" src='/images/indexDogIcon.png')
 			p Information about each dog in the rescue's care at this time, such as status, current foster home, vet records (in PDF format), biography, and photo. A new dog can also be added here.
+			a.indexLink(type= "button" href="dogsDirection") See the dogs!
 
 		.indexSelector
-			a(href="resourcesDirection") Resources
+			img(class="indexIcon" src='/images/resourcesIcon.png')
 			p Forms needed for any adoption or homecheck, and the volunteer handbook.
+			a.indexLink(href="resourcesDirection") View resources
 
 		p <img id='confusedDog' src=/images/confusedpup.jpeg> Don't see what you need?  Please email <a>rescue@westerndogs.org</a> with additional questions. 
