@@ -5,7 +5,8 @@ $(document).ready(function() {
 			dataType: 'json',
 			url: '/findCOfoster',
 			success: function (data) {
-				console.log(data)
+				console.log(data);
+				$('.attach').append('<li>' + data.firstname + '</li>');
 			}
 			// data: {name: "Fido"} to send data to server; accessible as req.query.name or req.body.name based on what kind of request
 		})
