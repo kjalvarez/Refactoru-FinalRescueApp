@@ -40,6 +40,7 @@ app.get('/dogs', contentController.displayDogs)
 app.get('/locator', contentController.locator)
 app.get('/addDog', contentController.addDogForm)
 app.get('/findCOfoster', findController.findAll)
+// Above get request is for searching through database and then rendering with AJAX
 
 app.get('/resourcesDirection', function (req, res) {
 	res.redirect('/resources')
