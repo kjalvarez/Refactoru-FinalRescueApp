@@ -5,6 +5,7 @@
 
 var indexController = require('./controllers/indexController.js')
 var contentController = require('./controllers/contentController.js')
+var findController = require('./controllers/findController.js')
 
 var express = require('express');
 var http = require('http');
@@ -38,6 +39,7 @@ app.get('/resources', contentController.resources)
 app.get('/dogs', contentController.displayDogs)
 app.get('/locator', contentController.locator)
 app.get('/addDog', contentController.addDogForm)
+app.get('/findCOfoster', findController.findAll)
 
 app.get('/resourcesDirection', function (req, res) {
 	res.redirect('/resources')

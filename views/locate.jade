@@ -8,11 +8,12 @@ block content
 			a(href="/dogsDirection") Dogs
 	h1.bigBanner #{title}
 	h1#resourcesBanner #{title2}
+	button(id="findButton" type="submit") Find
 
 	.mainContainer
 		//- div.locateNavigateBar To search short-term foster homes located in Texas, New Mexico and Kansas, click <a>here</a>.
 		//- div.locateNavigateBar If you are seeking an open foster home for a dog currently located in Colorado, click <a>here</a>.
-		iframe(width="100%" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCvHoFwbiQG5VD5MrCYbNB9FnHyQwL9h2Q&q=#{zipcode}")
+		iframe(width="100%" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCvHoFwbiQG5VD5MrCYbNB9FnHyQwL9h2Q&q=80207")
 
 
 	
