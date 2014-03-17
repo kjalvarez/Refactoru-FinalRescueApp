@@ -54,7 +54,7 @@ app.get('/addDogDirection', function (req, res) {
 	res.redirect('/addDog')
 })
 
-app.get("/addDogAction", contentController.addDog)
+app.post("/addDogAction", contentController.addDog)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
