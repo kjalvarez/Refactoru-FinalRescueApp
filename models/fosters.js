@@ -6,7 +6,7 @@ var FosterSchema = new mongoose.Schema({
 	state: String,
 	zip: String,
 	phone: String,
-	hasDog: String
+	hasDog: Boolean
 });
 
-var FosterModel = module.exports = mongoose.model('coloradofoster', FosterSchema);
+var FosterModel = module.exports = mongoose.model('foster', FosterSchema);

@@ -41,6 +41,7 @@ a {
 }
 
 .indexSelector {
+
 	display: inline-block;
 	min-height: 300px;
 	width: 30%;
@@ -244,13 +245,12 @@ img {
 .indexIcon {
 	width: 100px;
 	height: 100px;
-	margin-right: 50%;
-	margin-left: 30%;
 	background-color: #f5f5dc;
 	border-radius: 10px; 
 	border: solid black;
 	padding: 5px;
 	margin-bottom: 2%;
+	text-align: center;
 
 }
  .indexLink {
