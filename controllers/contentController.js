@@ -24,7 +24,8 @@ module.exports = {
 	locator: function(req, res) {
 		res.render('locate', {
 			title: 'Western Dogs Rescue of Colorado',
-			title2: 'Locator'
+			title2: 'Locator',
+			zipcode: 80903
 		})
 	},
 
