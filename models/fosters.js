@@ -9,4 +9,4 @@ var FosterSchema = new mongoose.Schema({
 	hasDog: Boolean
 });
 
-var FosterModel = module.exports = mongoose.model('foster', FosterSchema);
+var FosterModel = module.exports = mongoose.model('coloradofoster', FosterSchema);

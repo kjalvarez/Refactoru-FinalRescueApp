@@ -1,12 +1,16 @@
 $(document).ready(function() {
+	$('.fosterContainer').hide();
 
 	$('#findButton').on('click', function () {
+		$('.fosterContainer').show();
 		$.ajax( {
 			dataType: 'json',
 			url: '/findCOfoster',
 			success: function (data) {
-				console.log(data);
-				$('.attach').append('<li class="mainContainer">' + data[0].firstname + '</li>'); 
+				console.log(data); 
+				for(var i=0; i<data.length; i++) {
+				$('.attach').append('<div>' + data[i].firstname + " " + data[i].lastname + ": " + data[i].phone + ", " + 'Zip code: ' + data[i].zip + '</div>' + '<br>');
+				}
 				// Write for Loop here to find Fosters w/o dog
 				// Find fosters outside of Colorado 
 			}
