@@ -42,6 +42,10 @@ app.get('/addDog', contentController.addDogForm)
 app.get('/findCOfoster', findController.findAll)
 // Above get request is for searching through database and then rendering with AJAX
 
+app.get('/indexDirection', function (req, res) {
+	res.redirect('/index')
+})
+
 app.get('/resourcesDirection', function (req, res) {
 	res.redirect('/resources')
 })

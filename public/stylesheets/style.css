@@ -10,11 +10,12 @@ body {
 
 a {
 	color: #00B7FF;
+
 }
 
 .loginHelpBox {
 	font-size: 24px;
-	margin-top: 5%;
+	margin-top: 1%;
 }
 #indexBanner {
 	background-color: white;
@@ -37,6 +38,8 @@ a {
 	border-radius: 10px;
 	border: solid #926239;
 	text-align: center;
+	width: 75%;
+	margin: auto;
 	
 }
 
@@ -167,12 +170,13 @@ a {
 
 .dogListContainer {
 	font-size: 24px;
+	margin: auto;
 	padding: 10px;
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	border: solid #926239;
-	width: 100%;
+	width: 70%;
 	margin-bottom: 2%;
 }
 
@@ -231,7 +235,9 @@ img {
 	margin-left: 20%;
 	
 }
-
+.linkColor {
+	color: black;
+}
 .btn {
 	margin-left: 30%;
 	background-color: #A4D3EE;
