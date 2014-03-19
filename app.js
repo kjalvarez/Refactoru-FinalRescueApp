@@ -37,6 +37,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.get('/', function (req, res) {
+	res.redirect('/login')
+}
 app.get('/login', indexController.login);
 app.get('/index', indexController.index)
 app.get('/resources', contentController.resources)
