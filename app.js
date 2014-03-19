@@ -12,7 +12,11 @@ var http = require('http');
 var path = require('path');
 var mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/rescuedogs')
+var MONGOHQ_URL = "mongodb://heroku:Yk-S9wXthFHI4fVZvi8cDmFjw8vnZmLiyVmg-9BehT_hen9-S4mQBflaQDA46SXhOFMPRVUL3LQwDzky0wwbjA@oceanic.mongohq.com:10012/app23174690"
+
+var mongoURL = global.process.env.MONGOHQ_URL || 'mongodb://localhost/rescuedogs';
+mongoose.connect(mongoURL);
+
 
 var app = express();
 
